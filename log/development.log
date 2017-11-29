@@ -726,3 +726,4 @@ Completed 200 OK in 63ms (Views: 61.3ms | ActiveRecord: 0.0ms)
 
 
   [1m[36mContact Load (1.7ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  [1m[36mContact Load (2.9ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
