@@ -155,3 +155,35 @@ Processing by PagesController#about as HTML
 Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 75.146.76.89 at 2017-11-29 14:32:51 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5309ms (Views: 5297.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 75.146.76.89 at 2017-11-29 14:33:38 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 75.146.76.89 at 2017-11-29 14:33:44 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 75.146.76.89 at 2017-11-29 14:34:12 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
