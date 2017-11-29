@@ -681,3 +681,48 @@ Migrating to CreateContacts (20171129165321)
   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-11-29 16:55:31.156278"], ["updated_at", "2017-11-29 16:55:31.156278"]]
   [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 75.146.76.89 at 2017-11-29 17:03:50 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 496ms (Views: 486.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 75.146.76.89 at 2017-11-29 17:03:53 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 124ms (Views: 121.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 75.146.76.89 at 2017-11-29 17:03:58 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 99ms (Views: 86.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/contacts" for 75.146.76.89 at 2017-11-29 17:04:12 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jgD1bX7eR/aWe3eyYpFSnGMWgZnkpk6RUEoQ07PiZvQSBpouNtPmqzRNEwgGaFYR0HS5vXTXrQsGYOpRHz3W5w==", "contact"=>{"name"=>"test name", "email"=>"test email", "comments"=>"test comment"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "comments", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test name"], ["email", "test email"], ["comments", "test comment"], ["created_at", "2017-11-29 17:04:12.310199"], ["updated_at", "2017-11-29 17:04:12.310199"]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://rails-workspace-danm23.c9users.io/contacts/new
+Completed 302 Found in 16ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/contacts/new" for 75.146.76.89 at 2017-11-29 17:04:12 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 63ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mContact Load (1.7ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
