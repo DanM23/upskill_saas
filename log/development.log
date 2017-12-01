@@ -1337,3 +1337,53 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/sign_in" for 75.146.76.89 at 2017-12-01 19:35:37 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 3467ms (Views: 3423.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users/sign_in" for 75.146.76.89 at 2017-12-01 19:35:42 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XK6yZrTrBGnl/MJvdCqKJ23+9Khb40J8uzpIJUswjoNc+QmmBuvXa66GpvwFOt1QfT04lPR68xilQSadt62tuQ==", "user"=>{"email"=>"pogodmil@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "pogodmil@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-12-01 19:35:42.995181"], ["last_sign_in_at", "2017-12-01 19:31:11.859704"], ["sign_in_count", 3], ["updated_at", "2017-12-01 19:35:42.997661"], ["id", 1]]
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://rails-workspace-danm23.c9users.io/
+Completed 302 Found in 182ms (ActiveRecord: 15.8ms)
+
+
+Started GET "/" for 75.146.76.89 at 2017-12-01 19:35:43 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 127ms (Views: 125.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 75.146.76.89 at 2017-12-01 19:35:45 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6JypornkK1pV06CSYnmsyZAhsE80fg1ZiKzI+fRRc5oyJpnie46FD1MHNoqCCG8Iw6kQ6uvH/BCctmoDsGqxmw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://rails-workspace-danm23.c9users.io/
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 75.146.76.89 at 2017-12-01 19:35:45 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 69ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
