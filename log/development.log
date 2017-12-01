@@ -942,3 +942,20 @@ Processing by ContactsController#new as HTML
 Completed 200 OK in 87ms (Views: 84.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 75.146.76.89 at 2017-12-01 15:41:37 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 640ms (Views: 626.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact-us" for 75.146.76.89 at 2017-12-01 15:41:55 +0000
+Cannot render console from 75.146.76.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 170ms (Views: 148.1ms | ActiveRecord: 1.2ms)
+
+
